@@ -6,6 +6,10 @@
   padding:0px;
 }
 
+.container-fluid:nth-of-type(1) {
+  margin-top:60px;
+}
+
 .container-fluid > nav {
   padding-right:25px;
   background-color:#65C1DA;
@@ -96,9 +100,10 @@ html, body,
 }
 
 .shell {
-  width:100%;
+  width:50%;
   height:400px;
   background-color:rgba(0,0,0,0.7);
+  position:fixed;
 }
 
 .shell-heading {
@@ -118,6 +123,20 @@ html, body,
 
 /* End Shell */
 
+/*
+ * Content Body
+ */
+.content-body {
+  background-color:#FFF;
+}
+
+.welcome-heading {
+  text-align:center;
+  font-size:4.2em;
+  font-family: 'Niconne', cursive;
+}
+
+/* End Content Body */
 
 /* End Body */
 
