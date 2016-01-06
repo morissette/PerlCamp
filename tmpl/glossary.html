@@ -1,0 +1,239 @@
+      <div class="row">
+        <div class="col-md-12">
+          <h2><i class="fa fa-list-alt"></i> Glossary</h2>
+          <p><em>Below you will find a list of terminology used in this turorial as well as terminology that will be userful in general.</em></p>
+          <p>For a full glossary of Perl terminology please see: <a href="http://perldoc.perl.org/perlglossary.html" target="blank">Perl Glossary</a></p>
+          <hr>
+ 
+          <h4>Filter Glossary</h4>
+          <input id="search_input" ng-model="search_input" class="form-control" placeholder="Filter term">
+
+          <br>
+
+          <ul class="list" filter-glossary="search_input">
+            <li><strong class="name">algorithm</strong>
+              <p class="desc">A well-defined sequence of steps, explained clearly enough that even a computer could do them.</p>
+            </li>
+            <li><strong class="name">ARGV</strong>
+              <p class="desc">The name of the array containing the argument vector from the command line. If you use the empty <> operator, ARGV is the name of both the filehandle used to traverse the arguments and the scalar containing the name of the current input file.</p>
+            </li>
+            <li><strong class="name">array</strong>
+              <p class="desc">An ordered sequence of values, stored such that you can easily access any of the values using an integer subscript that specifies the value's offset in the sequence.</p>
+            </li>
+            <li><strong class="name">associative array</strong>
+              <p class="desc">See hash. Please. The term associative array is the old Perl 4 term for a hash. Some languages call it a dictionary.</p>
+            </li>
+            <li><strong class="name">autoincrement</strong>
+              <p class="desc">To add one to something automatically, hence the name of the ++ operator. To instead subtract one from something automatically is known as an "autodecrement"</p>
+            </li>
+            <li><strong class="name">block</strong>
+              <p class="desc">A syntactic construct consisting of a sequence of Perl statements that is delimited by braces. The if and while statements are defined in terms of BLOCK s, for instance. Sometimes we also say "block" to mean a lexical scope; that is, a sequence of statements that acts like a BLOCK , such as within an eval or a file, even though the statements aren't delimited by braces.</p>
+            </li>
+            <li><strong class="name">boolean</strong>
+              <p class="desc">A value that is either true or false.</p>
+            </li>
+            <li><strong class="name">built-in</strong>
+              <p class="desc">A function that is predefined in the language. Even when hidden by overriding, you can always get at a built- in function by qualifying its name with the CORE:: pseudopackage.</p>
+            </li>
+            <li><strong class="name">capturing</strong>
+              <p class="desc">The use of parentheses around a subpattern in a regular expression to store the matched substring as a backreference. (Captured strings are also returned as a list in list context.)</p>
+            </li>
+            <li><strong class="name">character class</strong>
+              <p class="desc">A square-bracketed list of characters used in a regular expression to indicate that any character of the set may occur at a given point. Loosely, any predefined set of characters so used.</p>
+            </li>
+            <li><strong class="name">command-line arguments</strong>
+              <p class="desc">The values you supply along with a program name when you tell a shell to execute a command. These values are passed to a Perl program through @ARGV.</p>
+            </li>
+            <li><strong class="name">command name</strong>
+              <p class="desc">The name of the program currently executing, as typed on the command line. In C, the command name is passed to the program as the first command-line argument. In Perl, it comes in separately as $0.</p>
+            </li>
+            <li><strong class="name">comment</strong>
+              <p class="desc">A remark that doesn't affect the meaning of the program. In Perl, a comment is introduced by a # character and continues to the end of the line.</p>
+            </li>
+            <li><strong class="name">concatenation</strong>
+              <p class="desc">The process of gluing one cat's nose to another cat's tail. Also a similar operation on two strings.</p>
+            </li>
+            <li><strong class="name">context</strong>
+              <p class="desc">The surroundings or environment. The context given by the surrounding code determines what kind of data a particular expression is expected to return. The three primary contexts are list context, scalar, and void context. Scalar context is sometimes subdivided into Boolean context, numeric context, string context, and void context.</p>
+            </li>
+            <li><strong class="name">data structure</strong>
+              <p class="desc">How your various pieces of data relate to each other and what shape they make when you put them all together, as in a rectangular table or a triangular tree.</p>
+            </li>
+            <li><strong class="name">dereference</strong>
+              <p class="desc">A fancy computer science term meaning “to follow a reference to what it points to”. The “de” part of it refers to the fact that you’re taking away one level of indirection.</p>
+            </li>
+            <li><strong class="name">directory handle</strong>
+              <p class="desc">A name that represents a particular instance of opening a directory to read it, until you close it. See the opendir function.</p>
+            </li>
+            <li><strong class="name">element</strong>
+              <p class="desc">A basic building block. When you’re talking about an array, it’s one of the items that make up the array.</p>
+            </li>
+            <li><strong class="name">environment</strong>
+              <p class="desc">The collective set of environment variables your process inherits from its parent. Accessed via %ENV.</p>
+            </li>
+            <li><strong class="name">environment variable</strong>
+              <p class="desc">A mechanism by which some high-level agent such as a user can pass its preferences down to its future offspring (child processes, grandchild processes, great-grandchild processes, and so on). Each environment variable is a key/value pair, like one entry in a hash.</p>
+            </li>
+            <li><strong class="name">filehandle</strong>
+              <p class="desc">An identifier (not necessarily related to the real name of a file) that represents a particular instance of opening a file, until you close it. If you’re going to open and close several different files in succession, it’s fine to open each of them with the same filehandle, so you don’t have to write out separate code to process each file.</p>
+            </li>
+            <li><strong class="name">function</strong>
+              <p class="desc">Mathematically, a mapping of each of a set of input values to a particular output value. In computers, refers to a subroutine or operator that returns a value. It may or may not have input values (called arguments).</p>
+            </li>
+            <li><strong class="name">global</strong>
+              <p class="desc">Something you can see from anywhere, usually used of variables and subroutines that are visible everywhere in your program. In Perl, only certain special variables are truly global—most variables (and all subroutines) exist only in the current package.</p>
+            </li>
+            <li><strong class="name">greedy</strong>
+              <p class="desc">A subpattern whose quantifier wants to match as many things as possible.</p>
+            </li>
+            <li><strong class="name">grep</strong>
+              <p class="desc">Originally from the old Unix editor command for "Globally search for a Regular Expression and Print it", now used in the general sense of any kind of search, especially text searches. Perl has a built-in grep function that searches a list for elements matching any given criterion, whereas the grep(1) program searches for lines matching a regular expression in one or more files.</p>
+            </li>
+            <li><strong class="name">hash</strong>
+              <p class="desc">An unordered association of key/value pairs, stored such that you can easily use a string key to look up its associated data value. This glossary is like a hash, where the word to be defined is the key and the definition is the value. A hash is also sometimes septisyllabically called an "associative array", which is pretty good reason fro simply calling it a "hash" instead.</p>
+            </li>
+            <li><strong class="name">here document</strong>
+              <p class="desc">So called because of a similar construct in shells that pretends that the lines following the command are a separate file to be fed to the command, up to some terminating string. In Perl, however, it’s just a fancy form of quoting.</p>
+            </li>
+            <li><strong class="name">host</strong>
+              <p class="desc">The computer on which a program or other data resides.</p>
+            </li>
+            <li><strong class="name">interpolation</strong>
+              <p class="desc">The insertion of a scalar or list value somewhere in the middle of another value, such that it appears to have been there all along. In Perl, variable interpolation happens in double-quoted strings and patterns, and list interpolation occurs when constructing the list of values to pass to a list operator or other such construct that takes a LIST.</p>
+            </li>
+            <li><strong class="name">iteration</strong>
+              <p class="desc">Doing something repeatedly</p>
+            </li>
+            <li><strong class="name">iterator</strong>
+              <p class="desc">A special programming gizmo that keeps track of where you are in something that you’re trying to iterate over. The foreach loop in Perl contains an iterator; so does a hash, allowing you to each through it.</p>
+            </li>
+            <li><strong class="name">key</strong>
+              <p class="desc">The string index to a hash, used to look up the value associated with that key.</p>
+            </li>
+            <li><strong class="name">laziness</strong>
+              <p class="desc">The quality that makes you go to great effort to reduce overall energy expenditure. It makes you write labor-saving programs that other people will find useful, and then document what you wrote so you don’t have to answer so many questions about it. Hence, the first great virtue of a programmer.</p>
+            </li>
+            <li><strong class="name">lexical scoping</strong>
+              <p class="desc">Looking at your Oxford English Dictionary through a microscope. (Also known as static scoping, because dictionaries don’t change very fast.) Similarly, looking at variables stored in a private dictionary (namespace) for each scope, which are visible only from their point of declaration down to the end of the lexical scope in which they are declared.</p>
+            </li>
+            <li><strong class="name">lexical variable</strong>
+              <p class="desc">A variable subject to lexical scoping, declared by my. Often just called a "lexical".</p>
+            </li>
+            <li><strong class="name">list</strong>
+              <p class="desc">An ordered set of scalar values.</p>
+            </li>
+            <li><strong class="name">list context</strong>
+              <p class="desc">The situation in which an expression is expected by its surroundings (the code calling it) to return a list of values rather than a single value. Functions that want a LIST of arguments tell those arguments that they should produce a list value. See also context.</p>
+            </li>
+            <li><strong class="name">list operator</strong>
+              <p class="desc">An operator that does something with a list of values, such as join or grep. Usually used for named built-in operators (such as print, unlink, and system) that do not require parentheses around their argument list.</p>
+            </li>
+            <li><strong class="name">literal</strong>
+              <p class="desc">A token in a programming language, such as a number or string, that gives you an actual value instead of merely representing possible values as a variable does.</p>
+            </li>
+            <li><strong class="name">local</strong>
+              <p class="desc">Not meaning the same thing everywhere. A global variable in Perl can be localized inside a dynamic scope via the local operator.</p>
+            </li>
+            <li><strong class="name">loop</strong>
+              <p class="desc">A construct that performs something repeatedly, like a roller coaster.</p>
+            </li>
+            <li><strong class="name">loop control statement</strong>
+              <p class="desc">Any statement within the body of a loop that can make a loop prematurely stop looping or skip an iteration. Generally, you shouldn’t try this on roller coasters.</p>
+            </li>
+            <li><strong class="name">newline</strong>
+              <p class="desc">A single character that represents the end of a line, with the ASCII value of 012 octal under Unix (but 015 on a Mac), and represented by \n in Perl strings. For Windows machines writing text files, and for certain physical devices like terminals, the single newline gets automatically translated by your C library into a line feed and a carriage return, but normally, no translation is done.</p>
+            </li>
+            <li><strong class="name">numeric context</strong>
+              <p class="desc">The situation in which an expression is expected by its surroundings (the code calling it) to return a number.</p>
+            </li>
+            <li><strong class="name">pattern matching</strong>
+              <p class="desc">Taking a pattern, usually a regular expression, and trying the pattern various ways on a string to see whether there’s any way to make it fit. Often used to pick interesting tidbits out of a file.</p>
+            </li>
+            <li><strong class="name">quantifier</strong>
+              <p class="desc">A component of a regular expression specifying how many times the foregoing atom may occur.</p>
+            </li>
+            <li><strong class="name">race condition</strong>
+              <p class="desc">A race condition exists when the result of several interrelated events depends on the ordering of those events, but that order cannot be guaranteed due to nondeterministic timing effects. If two or more programs, or parts of the same program, try to go through the same series of events, one might interrupt the work of the other. This is a good way to find an exploit.</p>
+            </li>
+            <li><strong class="name">readable</strong>
+              <p class="desc">With respect to files, one that has the proper permission bit set to let you access the file. With respect to computer programs, one that’s written well enough that someone has a chance of figuring out what it’s trying to do.</p>
+            </li>
+            <li><strong class="name">reference</strong>
+              <p class="desc">Where you look to find a pointer to information somewhere else. (See indirection.) References come in two flavors: symbolic references and hard references.</p>
+            </li>
+            <li><strong class="name">regular expression</strong>
+              <p class="desc">A single entity with various interpretations, like an elephant. To a computer scientist, it’s a grammar for a little language in which some strings are legal and others aren’t. To normal people, it’s a pattern you can use to find what you’re looking for when it varies from case to case.</p>
+            </li>
+            <li><strong class="name">return value</strong>
+              <p class="desc">The value produced by a subroutine or expression when evaluated. In Perl, a return value may be either a list or a scalar.</p>
+            </li>
+            <li><strong class="name">runtime</strong>
+              <p class="desc">The time when Perl is actually doing what your code says to do, as opposed to the earlier period of time when it was trying to figure out whether what you said made any sense whatsoever, which is compile time.</p>
+            </li>
+            <li><strong class="name">scalar</strong>
+              <p class="desc">A simple, singular value; a number, string, or reference.</p>
+            </li>
+            <li><strong class="name">scalar context</strong>
+              <p class="desc">The situation in which an expression is expected by its surroundings (the code calling it) to return a single value rather than a list of values. See also context and list context. A scalar context sometimes imposes additional constraints on the return value—see string context and numeric context. Sometimes we talk about a Boolean context inside conditionals, but this imposes no additional constraints, since any scalar value, whether numeric or string, is already true or false.</p>
+            </li>
+            <li><strong class="name">scope</strong>
+              <p class="desc">From how far away you can see a variable, looking through one. Perl has two visibility mechanisms. It does dynamic scoping of local variables, meaning that the rest of the block, and any subroutines that are called by the rest of the block, can see the variables that are local to the block. Perl does lexical scoping of my variables, meaning that the rest of the block can see the variable, but other subroutines called by the block cannot see the variable.</p>
+            </li>
+            <li><strong class="name">sigil</strong>
+              <p class="desc">A glyph used in magic. Or, for Perl, the symbol in front of a variable name, such as $ , @ , and % .</p>
+            </li>
+            <li><strong class="name">slice</strong>
+              <p class="desc">A selection of any number of elements from a list, array, or hash.</p>
+            </li>
+            <li><strong class="name">slurp</strong>
+              <p class="desc">To read an entire file into a string in one operation.</p>
+            </li>
+            <li><strong class="name">standard error</strong>
+              <p class="desc">The default output stream for nasty remarks that don’t belong in standard output. Represented within a Perl program by the output> filehandle STDERR . You can use this stream explicitly, but the die and warn built-ins write to your standard error stream automatically (unless trapped or otherwise intercepted).</p>
+            </li>
+            <li><strong class="name">standard input</strong>
+              <p class="desc">The default input stream for your program, which if possible shouldn’t care where its data is coming from. Represented within a Perl program by the filehandle STDIN.</p>
+            </li>
+            <li><strong class="name">standard output</strong>
+              <p class="desc">The default output stream for your program, which if possible shouldn’t care where its data is going. Represented within a Perl program by the filehandle STDOUT</p>
+            </li>
+            <li><strong class="name">statement</strong>
+              <p class="desc">A command to the computer about what to do next, like a step in a recipe: “Add marmalade to batter and mix until mixed.” A statement is distinguished from a declaration, which doesn’t tell the computer to do anything, but just to learn something.</p>
+            </li>
+            <li><strong class="name">string</strong>
+              <p class="desc">A sequence of characters such as “He said !@#*&%@#*?!”. A string does not have to be entirely printable.</p>
+            </li>
+            <li><strong class="name">string context</strong>
+              <p class="desc">The situation in which an expression is expected by its surroundings (the code calling it) to return a string.</p>
+            </li>
+            <li><strong class="name">subroutine</strong>
+              <p class="desc">A named or otherwise accessible piece of program that can be invoked from elsewhere in the program in order to accomplish some subgoal of the program. A subroutine is often parameterized to accomplish different but related things depending on its input arguments. If the subroutine returns a meaningful value, it is also called a function.</p>
+            </li>
+            <li><strong class="name">switch</strong>
+              <p class="desc">An option you give on a command line to influence the way your program works, usually introduced with a minus sign. The word is also used as a nickname for a switch statement.</p>
+            </li>
+            <li><strong class="name">syscall</strong>
+              <p class="desc">A function call directly to the operating system. Many of the important subroutines and functions you use aren’t direct system calls, but are built up in one or more layers above the system call level. In general, Perl programmers don’t need to worry about the distinction.</p>
+            </li>
+            <li><strong class="name">TMTOWTDI</strong>
+              <p class="desc">There’s More Than One Way To Do It, the Perl Motto. The notion that there can be more than one valid path to solving a programming problem in context. (This doesn’t mean that more ways are always better or that all possible paths are equally desirable—just that there need not be One True Way.)</p>
+            </li>
+            <li><strong class="name">variable</strong>
+              <p class="desc">A named storage location that can hold any of various kinds of value, as your program sees fit.</p>
+            </li>
+            <li><strong class="name">variable interpolation</strong>
+              <p class="desc">The interpolation of a scalar or array variable into a string.</p>
+            </li>
+            <li><strong class="name">void context</strong>
+              <p class="desc">A form of scalar context in which an expression is not expected to return any value at all and is evaluated for its side effects alone.</p>
+            </li>
+            <li><strong class="name">warning</strong>
+              <p class="desc">A message printed to the STDERR stream to the effect that something might be wrong but isn’t worth blowing up over.</p>
+            </li>
+            <li><strong class="name">whitespace</strong>
+              <p class="desc">A character that moves your cursor but doesn’t otherwise put anything on your screen. Typically refers to any of: space, tab, line feed, carriage return, or form feed.</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>

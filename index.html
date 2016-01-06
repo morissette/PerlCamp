@@ -29,6 +29,7 @@
 
     <!-- Angular -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- End Angular -->
 
@@ -44,7 +45,7 @@
         </div>
         <ul class="nav nav-pills navbar-right">
           <li><a href="code_review"><i class="fa fa-code"></i> Code Review</a></li>
-          <li><a href="glossary"><i class="fa fa-list-alt"></i> Glossary</a></li>
+          <li><a href="#/glossary"><i class="fa fa-list-alt"></i> Glossary</a></li>
           <li><a href="login"><i class="fa fa-sign-in"></i>Login/Register</a></li>
         </ul>
       </nav>
@@ -71,9 +72,7 @@
           </div>
         </div>
         <div class="col-md-6 content-body">
-          <h1 class="welcome-heading">Welcome to PerlCamp</h1>
-          <hr>
-	  <welcome-page></welcome-page>
+          <div ng-view></div>
         </div>
       </div>
     </div>
