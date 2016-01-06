@@ -1,0 +1,53 @@
+/*
+ * Main Layout 
+ */
+.container-fluid {
+  margin:0px;
+  padding:0px;
+}
+
+.container-fluid > nav {
+  padding-right:25px;
+  background-color:#65C1DA;
+  border-radius:0px;
+}
+
+.nav-header-image {
+  height:60px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.nav-header-title {
+  display:inline-block;
+  margin:0px;
+  font-size:38px;
+  color:rgba(0,0,0,0.4);
+  font-family: 'Niconne', cursive;
+  position:relative;
+  top:8px;
+}
+
+ul.navbar-right {
+  margin-top:10px;
+}
+
+ul.nav-pills > li {
+  border-radius:40px;
+  background-color:rgba(0,0,0,0.15);
+  margin-right:10px;
+}
+
+ul.nav-pills > li:hover,
+ul.nav-pills > li > a:hover {
+  border-radius:40px;
+  background-color:rgba(0,0,0,0.22);
+}
+
+ul.nav-pills > li > a {
+  color:#FFF;
+}
