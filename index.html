@@ -10,6 +10,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- End CDN CSS -->
 
+    <!-- CodeMirror -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/codemirror.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/theme/mdn-like.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.10.0/mode/perl/perl.min.js"></script>
+    <!-- End CodeMirror -->
+
     <!-- App Specific CSS -->
     <link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
@@ -40,8 +47,38 @@
     <!-- End Navbar -->
 
     <!-- Start Main Body -->
-
+    <div class="container-fluid">    
+      <div class="row">
+        <div class="col-md-6">
+          <div class="shell">
+	    <div class="shell-heading">
+	      Interactive Shell
+            </div>
+            <textarea id="shell-body"></textarea>
+            <div class="shell-output">
+	      <div class="shell-heading">
+                Output
+              </div>
+              <div class="shell-output-body"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="body-heading">Tutorial</h1>
+        </div>
+      </div>
+    </div>
     <!-- End Main Body-->
 
+    <!-- Initialize Code Mirror -->
+    <script>
+     var editor = CodeMirror.fromTextArea(document.getElementById('shell-body'), {
+        lineNumbers: true,
+        mode: "perl",
+        smartIndent: true,
+        theme: "mdn-like",
+      }); 
+    </script>
+    <!-- End Init Code Mirror -->
   </body>
 </html>
