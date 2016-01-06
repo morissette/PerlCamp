@@ -27,11 +27,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- End Jq + Boot JS -->
 
-    <!-- Angular -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <!-- End Angular -->
-
   </head>
   <body>
     
@@ -42,11 +37,6 @@
           <img class="nav-header-image" src="assets/images/camp.png">
           <h1 class="nav-header-title">PerlCamp</h1>
         </div>
-        <ul class="nav nav-pills navbar-right">
-          <li><a href="code_review"><i class="fa fa-code"></i> Code Review</a></li>
-          <li><a href="glossary"><i class="fa fa-list-alt"></i> Glossary</a></li>
-          <li><a href="login"><i class="fa fa-sign-in"></i>Login/Register</a></li>
-        </ul>
       </nav>
     </div>
     <!-- End Navbar -->
@@ -54,46 +44,12 @@
     <!-- Start Main Body -->
     <div class="container-fluid">    
       <div class="row">
-        <div class="col-md-6">
-          <div class="shell">
-	    <div class="shell-heading">
-	      Interactive Shell
-            </div>
-            <textarea id="shell-body"></textarea>
-            <div class="shell-output">
-	      <div class="shell-heading">
-                Output
-              </div>
-              <div class="shell-output-body">Test output</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 content-body">
-          <h1 class="welcome-heading">Welcome to PerlCamp</h1>
-          <hr>
+        <div class="col-sm-6 col-sm-offset-3">
+          <h4>Sorry, folks! You should code on a computer. If you are are on a computer try making your browser bigger! Thanks!</h4>
         </div>
       </div>
     </div>
     <!-- End Main Body-->
 
-    <!-- Initialize Code Mirror -->
-    <script>
-     var editor = CodeMirror.fromTextArea(document.getElementById('shell-body'), {
-        lineNumbers: true,
-        mode: "perl",
-        smartIndent: true,
-        theme: "mdn-like",
-      }); 
-    </script>
-    <!-- End Init Code Mirror -->
-
-    <!-- Because who has time to code on mobile? -->
-    <script type="text/javascript">
-      <!--
-      if ($(window).width() <= 999) {
-        document.location = "http://perlcamp.tk/mobile.html";
-      }
-      //-->
-    </script>
   </body>
 </html>
