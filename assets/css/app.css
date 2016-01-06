@@ -144,6 +144,11 @@ html, body,
   font-family: 'Niconne', cursive;
 }
 
+.section {
+  padding-left:10px;
+  padding-right:10px;
+}
+
 /* End Content Body */
 
 /* End Body */
