@@ -59,7 +59,9 @@
 	    <div class="shell-heading">
 	      Interactive Shell
             </div>
-            <textarea id="shell-body"></textarea>
+            <div class="shell-wrapper">
+              <textarea id="shell-body"></textarea>
+            </div>
             <div class="shell-output">
 	      <div class="shell-heading">
                 Output
@@ -84,7 +86,19 @@
         mode: "perl",
         smartIndent: true,
         theme: "mdn-like",
+        viewportMargin: Infinity,
       }); 
+
+      /*
+      var height = $(window).height();
+      $(window).resize(function() {
+        if ( $(this).height() != height ) {
+            console.log('hi');
+	    height = $(this).height();
+            editor.refresh();
+        }
+      });
+      */
     </script>
     <!-- End Init Code Mirror -->
 

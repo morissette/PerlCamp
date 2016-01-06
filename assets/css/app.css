@@ -94,9 +94,19 @@ html, body,
 .container-fluid:nth-of-type(2),
 .row,
 .col-md-6,
-.shell,
+.shell {
+  height:100%;
+}
+
 .CodeMirror {
   height:100%;
+}
+
+.CodeMirror * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -webkit-box-sizing:content-box;
 }
 
 .shell {
@@ -112,13 +122,18 @@ html, body,
   background-color:rgba(255,255,255,0.3);
 }
 
+.shell-wrapper {
+  height:100%;
+}
+
 .shell-output {
-  background-color:rgba(0,0,0,0.7);
+  background-color:rgba(0,0,0,1.0);
   color:#FFF;
   position:fixed;
   width:50%;
   height:40%;
   bottom:0;
+  z-index:1000;
 }
 
 .shell-output-body {
