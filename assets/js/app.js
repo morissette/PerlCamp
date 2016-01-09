@@ -35,6 +35,7 @@
                 function filterBy(value) {
                     li.forEach(function(el) {
                         el.className = el.textContent.toLowerCase().indexOf(value.toLowerCase()) !== -1 ? '' : 'ng-hide';
+			console.log(el.className);
                     });
                 }
 
