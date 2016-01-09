@@ -44,7 +44,7 @@
           <h1 class="nav-header-title">PerlCamp</h1>
         </div>
         <ul class="nav nav-pills navbar-right">
-          <li><a href="code_review"><i class="fa fa-code"></i> Code Review</a></li>
+          <li ng-show="loggedIn"><a href="code_review"><i class="fa fa-code"></i> Code Review</a></li>
           <li><a href="#/glossary"><i class="fa fa-list-alt"></i> Glossary</a></li>
           <li><a href="login"><i class="fa fa-sign-in"></i>Login/Register</a></li>
         </ul>
@@ -87,17 +87,6 @@
         theme: "mdn-like",
         viewportMargin: Infinity,
       }); 
-
-      /*
-      var height = $(window).height();
-      $(window).resize(function() {
-        if ( $(this).height() != height ) {
-            console.log('hi');
-	    height = $(this).height();
-            editor.refresh();
-        }
-      });
-      */
     </script>
     <!-- End Init Code Mirror -->
 

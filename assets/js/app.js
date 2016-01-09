@@ -19,10 +19,17 @@
             })
     })
 
+    /*
+     * Main site controller
+     */
     app.controller('mainController', function($scope) {
 
     })
 
+    /*
+     * Glossary controller
+     * Handles filtering and loading of glossary content
+     */
     app.controller('glossaryCtrl', function($scope, $http) {
     	var api_url = 'http://perlcamp.elasticbeanstalk.com/';
 	$http({
@@ -37,6 +44,11 @@
         });
     })
 
+    /*
+     * Below: Directives
+     * Used for basic templating and 
+     * organization of content
+     */
     app.directive('welcomePage', function() {
         return {
             restrict: 'E',
@@ -48,6 +60,13 @@
         return {
             restrict: 'E',
             templateUrl: 'tmpl/glossary.html',
+        };
+    })
+
+    app.directive('tableContents', function() {
+	return {
+	    restrict: 'E',
+	    templateUrl: 'tmpl/table-of-contents.html',
         };
     });
 
