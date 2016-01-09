@@ -23,29 +23,18 @@
 
     })
 
-    app.controller('glossaryCtrl', function($scope) {
-        
-    })
-
-    app.directive('filterGlossary', function($timeout) {
-        return {
-            link: function(scope, element, attrs) {
-                var li = Array.prototype.slice.call(element[0].children);
-
-                function filterBy(value) {
-                    li.forEach(function(el) {
-                        el.className = el.textContent.toLowerCase().indexOf(value.toLowerCase()) !== -1 ? '' : 'ng-hide';
-			console.log(el.className);
-                    });
-                }
-
-                scope.$watch(attrs.filterList, function(newVal, oldVal) {
-                    if ( newVal !== oldVal ) {
-                        filterBy(newVal);
-                    }
-                });
-            }
-        };
+    app.controller('glossaryCtrl', function($scope, $http) {
+    	var api_url = 'http://default-environment-prmwbfcujy.elasticbeanstalk.com/';
+	$http({
+	    method: 'GET',
+            url: api_url
+        }).then(function(ret) {
+	    console.log(ret)
+            $scope.glossary = ret;
+	}, function(ret) {
+	    console.log("Error: Something went wrong");
+            console.log(ret)
+        });
     })
 
     app.directive('welcomePage', function() {
