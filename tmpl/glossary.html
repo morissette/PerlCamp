@@ -10,7 +10,7 @@
 
           <br>
 
-          <ul class="list" ng-repeat="item in glossary | filter:search_input">
+          <ul class="list" ng-repeat="item in glossary | filter:search_input | orderBy: 'term'">
             <li>
               <strong>{{item.term}}</strong>
               <p>{{item.definition}}</p>
