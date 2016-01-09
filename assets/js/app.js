@@ -24,13 +24,13 @@
     })
 
     app.controller('glossaryCtrl', function($scope, $http) {
-    	var api_url = 'http://default-environment-prmwbfcujy.elasticbeanstalk.com/';
+    	var api_url = 'http://perlcamp.elasticbeanstalk.com/';
 	$http({
 	    method: 'GET',
             url: api_url
         }).then(function(ret) {
 	    console.log(ret)
-            $scope.glossary = ret;
+            $scope.glossary = ret.data;
 	}, function(ret) {
 	    console.log("Error: Something went wrong");
             console.log(ret)
